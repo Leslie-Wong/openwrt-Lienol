@@ -175,6 +175,8 @@ jobs:
           #CONFIG_PACKAGE_luci-i18n-pppoe-relay-zh-cn=y
           #CONFIG_PACKAGE_luci-i18n-pppoe-server-zh-cn=y
           
+          CONFIG_PACKAGE_luci-ssl-openssl=y
+          
           CONFIG_PACKAGE_luci-app-pptp-vpnserver-manyusers=y
           #CONFIG_PACKAGE_luci-i18n-pptp-vpnserver-manyusers-zh-cn=y
           
