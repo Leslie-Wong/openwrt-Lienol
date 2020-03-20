@@ -951,6 +951,8 @@ jobs:
 
           CONFIG_PACKAGE_luci-app-v2ray-server=y
           CONFIG_PACKAGE_luci-app-trojan-server=y
+          
+          CONFIG_PACKAGE_luci-ssl-openssl=y
 
           CONFIG_PACKAGE_luci-app-pppoe-relay=y
           CONFIG_PACKAGE_luci-app-pppoe-server=y
