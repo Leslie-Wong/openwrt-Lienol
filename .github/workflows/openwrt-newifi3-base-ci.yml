@@ -218,8 +218,10 @@ jobs:
           CONFIG_PACKAGE_minieap=y
           CONFIG_PACKAGE_luci-app-familycloud=y
           CONFIG_PACKAGE_luci-app-koolproxyR=y
-          CONFIG_PACKAGE_luci-app-mwan3=y
-          CONFIG_PACKAGE_luci-app-mwan3helper=y
+          #CONFIG_PACKAGE_luci-app-mwan3=y
+          #CONFIG_PACKAGE_luci-app-mwan3helper=y
+          
+          CONFIG_PACKAGE_luci-app-nps=y
           CONFIG_PACKAGE_luci-app-syncdial=y
           CONFIG_PACKAGE_luci-app-unblockmusic=y
           
