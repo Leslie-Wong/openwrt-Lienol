@@ -1194,10 +1194,10 @@ jobs:
         run: |
           rm -rf ./artifact/
           mkdir -p ./artifact/
-          #find ./bin/targets/ -name "*combined*img*" | xargs -i mv -f {} ./artifact/
-          #find ./bin/targets/ -name "*sysupgrade*bin*" | xargs -i mv -f {} ./artifact/
-          mv ./bin/targets/ ./artifact/
-          mv ./bin/packages/ ./artifact/
+          find ./bin/targets/ -name "*combined*img*" | xargs -i mv -f {} ./artifact/
+          find ./bin/targets/ -name "*sysupgrade*bin*" | xargs -i mv -f {} ./artifact/
+          #mv ./bin/targets/ ./artifact/
+          #mv ./bin/packages/ ./artifact/
       - name: Upload artifact
         uses: actions/upload-artifact@master
         with:
