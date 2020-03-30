@@ -205,7 +205,7 @@ jobs:
           CONFIG_SSP_SUPPORT=y
           CONFIG_BINUTILS_VERSION_2_31_1=y
           CONFIG_BINUTILS_VERSION="2.31.1"
-          CONFIG_GCC_VERSION="7.5.0"
+          CONFIG_GCC_VERSION="9.3.0"
           CONFIG_LIBC="musl"
           CONFIG_TARGET_SUFFIX="musl"
           CONFIG_TARGET_PREINIT_SUPPRESS_STDERR=y
@@ -942,7 +942,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_socks=y
           CONFIG_PACKAGE_luci-app-passwall_INCLUDE_V2ray=y
           CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan=y
-          #CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Brook=y
+          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Brook=y
           CONFIG_PACKAGE_luci-app-passwall_INCLUDE_kcptun=y
           #CONFIG_PACKAGE_luci-app-passwall_INCLUDE_haproxy=y
           CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ChinaDNS_NG=y
@@ -951,6 +951,7 @@ jobs:
 
           CONFIG_PACKAGE_luci-app-v2ray-server=y
           CONFIG_PACKAGE_luci-app-trojan-server=y
+           CONFIG_PACKAGE_luci-app-brook-server=y
           
           CONFIG_PACKAGE_luci-ssl-openssl=y
 
