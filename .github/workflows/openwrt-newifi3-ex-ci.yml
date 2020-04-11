@@ -701,7 +701,6 @@ jobs:
           CONFIG_PACKAGE_kmod-mt76x02-common=y
           CONFIG_PACKAGE_kmod-mt76x2=y
           CONFIG_PACKAGE_kmod-mt76x2-common=y
-          CONFIG_PACKAGE_kmod-mt_wifi=y
           CONFIG_MTK_SUPPORT_OPENWRT=y
           CONFIG_MTK_WIFI_DRIVER=y
           CONFIG_MTK_FIRST_IF_MT7615E=y
@@ -709,8 +708,6 @@ jobs:
           CONFIG_MTK_THIRD_IF_NONE=y
           CONFIG_MTK_RT_FIRST_CARD=7615
           CONFIG_MTK_RT_FIRST_IF_RF_OFFSET=0xc0000
-          CONFIG_MTK_MT_WIFI=y
-          CONFIG_MTK_MT_WIFI_PATH="mt_wifi"
 
           CONFIG_MTK_FIRST_IF_EEPROM_FLASH=y
           CONFIG_MTK_RT_FIRST_CARD_EEPROM="flash"
@@ -926,7 +923,6 @@ jobs:
           CONFIG_PACKAGE_luci-app-firewall=y
           CONFIG_PACKAGE_luci-app-flowoffload=y
           CONFIG_PACKAGE_luci-app-guest-wifi=y
-          #CONFIG_PACKAGE_luci-app-mtwifi=y
           #CONFIG_PACKAGE_luci-app-mwan3=y
           #CONFIG_PACKAGE_luci-app-mwan3helper=y
 
