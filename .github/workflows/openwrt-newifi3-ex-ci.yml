@@ -956,7 +956,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-samba=y
           CONFIG_PACKAGE_luci-app-smartdns=y
           ##CONFIG_PACKAGE_luci-app-softethervpn=y
-          CONFIG_PACKAGE_luci-app-sqm=y
+          CONFIG_PACKAGE_luci-app-sqm=m
           #CONFIG_PACKAGE_luci-app-nps=y
           CONFIG_PACKAGE_luci-app-syncdial=y
           CONFIG_PACKAGE_luci-app-upnp=y
@@ -977,7 +977,7 @@ jobs:
           CONFIG_PACKAGE_luci-lib-jsonc=y
           CONFIG_PACKAGE_luci-lib-nixio=y
 
-          #CONFIG_PACKAGE_default-settings=y
+          CONFIG_PACKAGE_default-settings=y
           CONFIG_PACKAGE_luci-i18n-adbyby-plus-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-aria2-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-base-zh-cn=y
