@@ -192,7 +192,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-splash=y
           CONFIG_PACKAGE_luci-i18n-splash-zh-cn=y
           
-          CONFIG_PACKAGE_luci-app-sqm=y
+          CONFIG_PACKAGE_luci-app-sqm=m
           
           CONFIG_PACKAGE_luci-app-ssrserver-python=y
           #CONFIG_PACKAGE_luci-i18n-ssr-python-pro-server-zh-cn=y
