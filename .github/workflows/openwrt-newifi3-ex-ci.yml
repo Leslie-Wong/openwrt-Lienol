@@ -10,7 +10,7 @@
 name: OpenWrt-newifi3-ex-CI
 
 on: 
-  schedule:
+   schedule:
     - cron: 0 22 * * *
    push:
      branches: 
