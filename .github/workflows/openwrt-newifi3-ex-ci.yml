@@ -52,9 +52,8 @@ jobs:
           ./scripts/feeds install -a
       - name: add librarys
         run: |
-           cd openwrt/package/lean/
-           git clone https://github.com/Leslie-Wong/passwall.git
-           cd ../../
+           cd package/lean && git clone https://github.com/Leslie-Wong/passwall.git
+           
       - name: Costom configure file
         run: |
           rm -f ./.config*
