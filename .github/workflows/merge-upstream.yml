@@ -39,12 +39,12 @@ jobs:
         git config --global user.name "LesLis.W"
     
     - name: Load upstream dev-master commits
-      run: git pull -f https://github.com/Lienol/openwrt.git dev-master:dev-master --no-edit --strategy-option ours
+      run: git pull --rebase https://github.com/Lienol/openwrt.git dev-master:dev-master --no-edit --strategy-option ours
    
     - name: Push Commits
       env:
         DOWNSTREAM_BRANCH: dev-master
-      run: git push -f origin $DOWNSTREAM_BRANCH
+      run: git pull --rebase origin $DOWNSTREAM_BRANCH
     
     - name: Checkout
       uses: actions/checkout@master
@@ -54,12 +54,12 @@ jobs:
         lfs: true
    
     - name: Load upstream 19.07 commits
-      run: git pull -f https://github.com/Lienol/openwrt.git dev-19.07:dev-19.07 --no-edit --strategy-option ours
+      run: git pull --rebase https://github.com/Lienol/openwrt.git dev-19.07:dev-19.07 --no-edit --strategy-option ours
    
     - name: Push Commits
       env:
         DOWNSTREAM_BRANCH: dev-19.07
-      run: git push -f origin $DOWNSTREAM_BRANCH
+      run: git pull --rebase origin $DOWNSTREAM_BRANCH
 
     - name: Checkout
       uses: actions/checkout@master
@@ -69,9 +69,9 @@ jobs:
         lfs: true
     
     - name: Load upstream dev-lean-lede commits
-      run: git pull -f https://github.com/Lienol/openwrt.git dev-lean-lede:dev-lean-lede --no-edit --strategy-option ours
+      run: git pull --rebase https://github.com/coolsnowwolf/lede.git dev-lean-lede:dev-lean-lede --no-edit --strategy-option ours
    
     - name: Push Commits
       env:
         DOWNSTREAM_BRANCH: dev-lean-lede
-      run: git push -f origin $DOWNSTREAM_BRANCH
+      run: git pull --rebase origin $DOWNSTREAM_BRANCH
