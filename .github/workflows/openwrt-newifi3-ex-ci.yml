@@ -58,7 +58,7 @@ jobs:
            
       - name: add passwall
         run: |
-           cd package/lean && git clone https://github.com/Leslie-Wong/passwall.git
+           cd package/lienol && git clone https://github.com/Leslie-Wong/passwall.git
            
       - name: Costom configure file
         run: |
