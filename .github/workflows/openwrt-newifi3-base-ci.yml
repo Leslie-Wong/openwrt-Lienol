@@ -50,6 +50,14 @@ jobs:
         run: |
           ./scripts/feeds update -a
           ./scripts/feeds install -a
+      - name: add small
+        run: |
+           cd package && git clone https://github.com/Leslie-Wong/small.git
+           
+      - name: add passwall
+        run: |
+           cd package/lean && git clone https://github.com/Leslie-Wong/passwall.git
+           
       - name: Costom configure file
         run: |
           rm -f ./.config*
