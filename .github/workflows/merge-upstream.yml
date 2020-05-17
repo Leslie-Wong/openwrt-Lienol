@@ -44,7 +44,7 @@ jobs:
     - name: Push Commits
       env:
         DOWNSTREAM_BRANCH: dev-master
-      run: git pull --rebase origin $DOWNSTREAM_BRANCH
+      run: git push -f origin $DOWNSTREAM_BRANCH
     
     - name: Checkout
       uses: actions/checkout@master
