@@ -39,7 +39,7 @@ jobs:
         git config --global user.name "LesLis.W"
     
     - name: Load upstream dev-master commits
-      run: git pull --rebase https://github.com/Lienol/openwrt.git dev-master:dev-master --no-edit --strategy-option ours
+      run: git pull -f https://github.com/Lienol/openwrt.git dev-master:dev-master --no-edit --strategy-option ours
    
     - name: Push Commits
       env:
