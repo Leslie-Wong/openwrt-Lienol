@@ -1186,7 +1186,7 @@ jobs:
           find dl -size -1024c -exec rm -f {} \;
       - name: Compile firmware
         run: |
-          make -j$(nproc) || make -j1 V=s
+          make -j1 V=s
           echo "======================="
           echo "Space usage:"
           echo "======================="
